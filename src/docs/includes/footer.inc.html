@@ -1,0 +1,32 @@
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/docs.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Copy Nav to the mobile little nav (make stuffz easier)
+            $('#collapsed-widgets-nav').append(
+                $('#main-wigets-nav').html()
+            );
+
+            // preserve selected values for sport and match id
+            var urlSuffix = [];
+
+            for(var i=0; i< params.length; i++) {
+                urlSuffix.push(params[i] + '=' + params[params[i]]);
+            }
+
+            $('.match-widgets a').each(function() {
+                var link = $(this).attr('href');
+                $(this).attr('href', link + '?' + urlSuffix.join('&'));
+            });
+        });
+    </script>
+
+</body>
+</html>

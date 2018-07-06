@@ -1,0 +1,48 @@
+// AUTO LOGO
+.rcg-logo-auto {
+    margin-bottom: 2vw;
+    width: 100%;
+}
+
+.rcg-logo__svg-auto {
+    svg {
+        display: inline-block;
+        width: 8vw;
+        height: 5vw;
+        vertical-align: middle;
+        fill: $rcg-auto-color--white;
+    }
+}
+
+.rcg-logo__title-auto {
+    display: inline-block;
+    padding-left: $rcg-int-padding-m;
+    width: 6vw;
+    vertical-align: middle;
+    font-size: $rcg-auto-font-size--body-content-6;
+    font-weight: bold;
+}
+
+// INTERACTIVE LOGO
+.rcg-logo-interactive {
+    width: auto;
+}
+
+.rcg-logo__svg-interactive {
+    svg {
+        display: inline-block;
+        width: 55px;
+        height: 33px;
+        vertical-align: middle;
+        fill: $rcg-auto-color--white;
+    }
+}
+
+.rcg-logo__title-interactive {
+    display: inline-block;
+    padding-left: $rcg-int-padding-m;
+    width: 50%;
+    vertical-align: middle;
+    font-size: $rcg-int-font-size--body-content-6;
+    font-weight: bold;
+}

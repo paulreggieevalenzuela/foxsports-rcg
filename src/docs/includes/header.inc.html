@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>@@title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://ott-staging.foxsports.com.au/assets/images/team-logos/1/80x60/1.css" />
+    <link rel="stylesheet" href="http://ott-staging.foxsports.com.au/assets/images/team-logos/1/208x156/1.css" />
+    <link rel="stylesheet" href="http://ott-staging.foxsports.com.au/assets/images/team-logos/2/80x60/2.css" />
+    <link rel="stylesheet" href="http://ott-staging.foxsports.com.au/assets/images/team-logos/2/208x156/2.css" />
+    <link rel="stylesheet" href="../css/style.min.css" />
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- fontawesome used temporarily for icons -->
+    <script src="https://use.fontawesome.com/4dbc8eedd1.js"></script>
+
+
+  <style>
+    body {
+      background: #fff;
+      padding-top: 50px;
+    }
+
+  /*
+   * Top navigation
+   * Hide default border to remove 1px line.
+   */
+   .navbar-fixed-top {
+    border: 0;
+  }
+
+  /* Hide for mobile, show later */
+  .sidebar {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    .sidebar {
+      position: fixed;
+      top: 51px;
+      bottom: 0;
+      left: 0;
+      z-index: 0 !important;
+      display: block;
+      padding: 20px;
+      overflow-x: hidden;
+      overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+      background-color: #f5f5f5;
+      border-right: 1px solid #eee;
+    }
+  }
+
+  /* Sidebar navigation */
+  .nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+  }
+  .nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .nav-sidebar > .active > a,
+  .nav-sidebar > .active > a:hover,
+  .nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #428bca;
+  }
+
+  /*
+   * Main content
+   */
+  .main {
+    padding: 0;
+  }
+
+  @media (min-width: 768px) {
+    .main {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+  .main .page-header {
+    margin-top: 0;
+  }
+
+  /* Pages without FSVG have a huge gap up the top. */
+  #fsvg {
+    position: absolute;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+</style>
+    <script>
+        /**
+         * getUrlVars as array
+         * http://jquery-howto.blogspot.com.au/2009/09/get-url-parameters-values-with-jquery.html
+         * @return string[] assoc array
+         */
+        function getUrlVars() {
+          var vars = [], hash;
+          var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+          for(var i = 0; i < hashes.length; i++)
+          {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+          }
+          return vars;
+        }
+
+        var params = getUrlVars();
+
+        $(document).ready(function() {
+          Object.keys(params).forEach(function (key) {
+            try {
+              $('#' + key).val(params[key]);
+            } catch (ex) {}
+          });
+        });
+    </script>
+</head>
+
+<body class="foxsports">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">RCG Departure Tracker</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul id="collapsed-widgets-nav" class="nav navbar-nav navbar-right visible-xs-block">
+          <!-- leave this empty, I get copied from the other menu -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar">
+        <ul id="main-wigets-nav" class="nav nav-sidebar">
+            <li><a href="./index.html">Home</a></li>
+            <li class="nav-divider"><!-- Widgets --></li>
+            <li><a href="./auto.html">Auto Dashboard</a></li>
+            <li><a href="./interactive.html">Interactive Dashboard</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">

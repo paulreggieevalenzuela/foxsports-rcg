@@ -1,0 +1,240 @@
+.rcg-booking-list {
+    @include flex-container;
+    flex: 18 1 5%;
+}
+
+.rcg-booking-list__content {
+    flex: 5 1 10%;
+    background: $rcg-int-color--booking-list;
+
+    @media screen and (min-width: $screen-desktop) {
+        flex: 6 1 5%;
+    }
+
+    @media screen and (min-width: $screen-xl-desktop) {
+        flex: 5 1 5%;
+    }
+
+    &--hide {
+        display: none;
+    }
+}
+
+// INDICATOR
+.rcg-booking-list__indicator {
+    background: $rcg-int-color--result;
+    padding: $rcg-int-padding-m $rcg-int-padding-l;
+    width: 100%;
+    color: $rcg-int-color--white;
+    font-size: $rcg-int-font-size--body-content-3;
+    font-weight: normal;
+    font-style: italic;
+}
+
+// SORT
+.rcg-booking-list__sort {
+    display: block;
+    background: $rcg-int-color--sort-filter;
+    padding: 0 $rcg-int-padding-m;
+    width: auto;
+}
+
+.rcg-booking-list__sort-select-order {
+    display: inline-block;
+    width: 50%;
+}
+
+.rcg-booking-list__sort-select-cat {
+    display: inline-block;
+    padding: $rcg-int-padding-m $rcg-int-padding-l;
+    width: 50%;
+}
+
+.rcg-booking-list__sort-label {
+    @include input-label;
+    display: inline-block;
+    margin-right: $rcg-int-margin--xs;
+    width: 100%;
+    text-align: left;
+
+    @media screen and (min-width: $screen-desktop) {
+        width: 20%;
+        text-align: right;
+    }
+
+    &--order {
+        padding-left: $rcg-int-padding-m;
+        width: auto;
+        text-align: left;
+
+        @media screen and (min-width: $screen-desktop) {
+            width: 20%;
+        }
+    }
+}
+
+.rcg-booking-list__sort-options {
+    @include input-field;
+    @include drop-down;
+}
+
+.rcg-booking-list__sort-drop {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+
+    @media screen and (min-width: $screen-desktop) {
+        width: 70%;
+    }
+
+    &::after {
+        @include drop-down-button;
+    }
+}
+
+.rcg-booking-list__sort-radio {
+    display: inline-block;
+    margin: $rcg-int-margin--xs 0 0;
+}
+
+// BOOKING LIST ITEMS
+.rcg-booking-list__list {
+    @include flex-column-scroll;
+    @include rcg-scrollbar;
+    margin-bottom: 0;
+    padding: 0 $rcg-int-padding-m;
+    width: 100%;
+    height: calc(100vh - 175px);
+    list-style: none;
+    -webkit-margin-before: 0; // OVERRIDE USER AGENT UL STYLE
+    -webkit-margin-after: 0;
+}
+
+.rcg-booking-list__list-item {
+    display: table;
+    transition: background 0.2s ease-in-out;
+    margin-bottom: $rcg-int-margin--xs;
+    border-radius: $rcg-int-border-radius-all;
+    background: $rcg-int-color--list-item;
+    padding: $rcg-int-padding-m;
+    width: 100%;
+    table-layout: fixed;
+
+    &:first-child {
+        margin-top: $rcg-int-margin--xs;
+    }
+
+    &:hover {
+        background: $rcg-int-color--list-item-active;
+        cursor: pointer;
+    }
+}
+
+.rcg-booking-list__item-status {
+    display: table-cell;
+    padding: $rcg-int-padding-sm;
+    width: 15%;
+    vertical-align: middle;
+    text-align: center;
+
+    @media screen and (min-width: $screen-desktop) {
+        width: 10%;
+    }
+}
+
+.rcg-booking-list__icon {
+    border-radius: $rcg-int-border-radius-circle;
+    padding: $rcg-int-padding $rcg-int-padding $rcg-int-padding 7px;
+    color: $rcg-int-color--white;
+    font-size: $rcg-int-font-size--body-content-3;
+}
+
+.rcg-booking-list__item-info {
+    display: table-cell;
+    padding: $rcg-int-padding-sm;
+    width: 90%;
+}
+
+.rcg-booking-list__item-info-detail {
+    display: block;
+    font-size: $rcg-int-font-size--body-content-6;
+
+    & span {
+        display: inline;
+        margin-right: 5%;
+
+        @media screen and (min-width: $screen-desktop) {
+            margin-right: 20%;
+        }
+    }
+}
+
+.rcg-booking-list__item-info-title {
+    display: block;
+    margin: $rcg-int-margin--xs/2 0;
+    color: $rcg-int-color--blue;
+    font-size: $rcg-int-font-size--body-content-3;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+// BOOKING LIST ICON
+.rcg-booking-list__icon {
+    font-size: $rcg-int-font-size--body-content-3;
+
+    &--scheduled {
+        border-radius: $rcg-int-border-radius-circle;
+        background: $rcg-int-status-color--blue;
+        padding: $rcg-int-padding;
+        color: $rcg-int-status-color--black;
+
+        &:before {
+            content: "\f017";
+        }
+    }
+
+    &--processed {
+        border-radius: $rcg-int-border-radius-circle;
+        background: $rcg-int-status-color--green;
+        padding: $rcg-int-padding;
+        color: $rcg-int-status-color--black;
+
+        &:before {
+            content: "\f00c";
+        }
+    }
+
+    &--cancelled {
+        border-radius: $rcg-int-border-radius-circle;
+        background: $rcg-int-status-color--red;
+        padding: $rcg-int-padding;
+        color: $rcg-int-color--white;
+
+        &:before {
+            content: "\f00d";
+        }
+    }
+
+    &--corrupted {
+        border-radius: $rcg-int-border-radius-circle;
+        background: $rcg-int-status-color--yellow;
+        padding: $rcg-int-padding-sm 9px;
+        color: $rcg-int-status-color--black;
+
+        &:before {
+            content: "\f12a";
+        }
+    }
+
+    &--running {
+        border-radius: $rcg-int-border-radius-circle;
+        background: $rcg-int-status-color--pink;
+        padding: $rcg-int-padding $rcg-int-padding $rcg-int-padding 7px;
+        color: $rcg-int-color--white;
+
+        &:before {
+            content: "\f04e";
+        }
+    }
+}

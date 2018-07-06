@@ -1,0 +1,25 @@
+.rcg-currently-playing__logo {
+    @include flex;
+    padding: .5vw;
+
+    img {
+        width: 100%;
+        max-width: 3.2vw;
+    }
+
+    p {
+        display: block;
+        text-align: center;
+        line-height: 2.6vw;
+    }
+}
+
+.rcg-currently-playing__team {
+    font-size: $rcg-auto-font-size--body-content-6;
+
+    p {
+        display: block;
+        text-align: center;
+        line-height: 1vw;
+    }
+}

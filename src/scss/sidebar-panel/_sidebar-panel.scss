@@ -1,0 +1,12 @@
+.rcg-auto-sidebar-panel {
+    @include sidebar-panel;
+    border-radius: $rcg-auto-border-radius-all;
+}
+
+.rcg-auto-sidebar-panel__header {
+    @include sidebar-panel-header;
+    display: flex;
+    flex-direction: column;
+    border-radius: $rcg-auto-border-radius-top;
+    padding: $rcg-auto-padding-xs;
+}

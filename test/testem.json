@@ -1,0 +1,16 @@
+{
+	"framework": "mocha",
+	"parallel": "6",
+	"port": 0,
+	"launch_in_ci" : [
+		"IE",
+		"Chrome",
+		"Firefox",
+		"Safari",
+		"PhantomJS"
+	],
+	"reporter": "tap",
+	"ignore_missing_launchers": "true",
+	"test_page": ["test/runner.html"],
+	"report_file": "tmp/test/results/testem-report.tap"
+}

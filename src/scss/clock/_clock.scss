@@ -1,0 +1,59 @@
+// AUTO
+.rcg-clock__auto {
+    @include flex;
+    @include sidebar-panel;
+}
+
+.rcg-clock__auto-header {
+    @include flex;
+    flex-direction: column;
+    border-radius: $rcg-auto-border-radius-left;
+    padding: .8vw .5vw;
+}
+
+.rcg-clock__auto-header-label {
+    font-size: $rcg-auto-font-size--body-content-5;
+    font-weight: bold;
+}
+
+.rcg-clock__auto-header-sublabel {
+    font-size: $rcg-auto-font-size--body-content-7;
+}
+
+.rcg-clock__auto-body {
+    @include flex;
+    padding: .3vw;
+    font-size: $rcg-auto-font-size--body-content-1;
+    font-style: italic;
+}
+
+// INTERACTIVE
+.rcg-clock__interactive {
+    display: flex;
+    margin-bottom: $rcg-int-margin--xs;
+}
+
+.rcg-clock__interactive-header {
+    display: flex;
+    flex-direction: column;
+    padding: $rcg-int-padding-sm $rcg-int-padding-m;
+    width: 35%;
+    text-transform: uppercase;
+}
+
+.rcg-clock__interactive-header-label {
+    font-size: $rcg-int-font-size--body-content-3;
+    font-weight: bold;
+}
+
+.rcg-clock__interactive-header-sublabel {
+    font-size: $rcg-int-font-size--body-content-9;
+}
+
+.rcg-clock__interactive-body {
+    @include date-clock-container;
+    padding: $rcg-int-padding-sm;
+    width: 65%;
+    text-align: center;
+    font-size: $rcg-int-font-size--body-content-1;
+}

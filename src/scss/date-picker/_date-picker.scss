@@ -1,0 +1,59 @@
+.rcg-date-picker__filter-period {
+    margin-bottom: $rcg-int-margin--xs;
+    width: 100%;
+}
+
+.rcg-date-picker__label {
+    @include input-label;
+
+    &--day-picker {
+        display: inline;
+        margin-right: $rcg-int-margin;
+    }
+}
+
+.rcg-date-picker__day-picker-label {
+    @include input-label;
+    display: inline;
+    margin-right: $rcg-int-margin;
+}
+
+.rcg-date-picker__period {
+    margin-bottom: $rcg-int-margin--xs;
+    width: 100%;
+}
+
+.rcg-date-picker__period-options {
+    @include input-field;
+    @include drop-down;
+    margin-bottom: $rcg-int-margin--xs;
+}
+
+.rcg-date-picker__drop {
+    display: inline;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        @include drop-down-button;
+        top: 0;
+    }
+}
+
+.rcg-date-picker__date-picker {
+    margin: $rcg-int-margin--xs 0;
+}
+
+.rcg-date-picker__day-picker {
+    display: block;
+    margin: $rcg-int-margin--xs $rcg-int-margin--xs/2;
+    text-align: right;
+}
+
+.rcg-date-picker__date-picker-input {
+    @include input-field;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

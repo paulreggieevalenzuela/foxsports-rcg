@@ -1,0 +1,68 @@
+.rcg-interactive-sidebar {
+    @include flex-column-scroll;
+    @include rcg-scrollbar;
+    flex: 4 1 5%;
+    background: $rcg-int-color--side-bar;
+    padding: $rcg-int-padding-m;
+    height: calc(100vh - 86px);
+
+    @media screen and (min-width: $screen-desktop) {
+        flex: 3 1 5%;
+    }
+    @media screen and (min-width: $screen-lg-desktop) {
+        flex: 2 1 5%;
+    }
+    @media screen and (min-width: $screen-xl-desktop) {
+        flex: 1 1 5%;
+    }
+}
+
+// HR
+.rcg-interactive-sidebar__hr {
+    border-top: 1px solid rgba($rcg-int-color--light-grey, .5);
+}
+
+.rcg-interactive-sidebar__hr-filter {
+    border-top: 1px solid rgba($rcg-int-color--light-grey, .5);
+    width: 90%;
+}
+
+// FILTERS
+.rcg-interactive-sidebar__filter h2 {
+    margin-top: 0;
+    font-size: $rcg-int-font-size--body-content-3;
+    font-weight: bold;
+}
+
+.rcg-interactive-sidebar__filter-label {
+    @include input-label;
+}
+
+.rcg-interactive-sidebar__filter-status {
+    margin-bottom: $rcg-int-margin--xs;
+    width: 100%;
+}
+
+.rcg-interactive-sidebar__filter-status-options {
+    @include input-field;
+    @include drop-down;
+    margin-bottom: $rcg-int-margin--xs;
+}
+
+.rcg-interactive-sidebar__filter-drop {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        @include drop-down-button;
+    }
+}
+
+.rcg-interactive-sidebar__filter-button {
+    margin: $rcg-int-margin--xs 0;
+    text-align: center;
+}
+
+.rcg-interactive-sidebar__filter-reset-button {
+    @include form-button
+}

@@ -1,0 +1,77 @@
+.rcg-switch {
+    margin: 0 auto;
+}
+
+.rcg-switch__label {
+    display: inline-block;
+    margin: 0 $rcg-int-margin--xs $rcg-int-margin--xs/2 0;
+    vertical-align: middle;
+}
+
+.rcg-switch__toggle {
+    display: none;
+    position: absolute;
+}
+
+.rcg-switch__toggle + label {
+    display: block;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.rcg-switch__label-text {
+    position: absolute;
+    top: 1;
+    right: 8px;
+    z-index: 1;
+    color: $rcg-int-color--light-grey;
+    font-size: $rcg-int-font-size--body-content-8;
+
+    &--checked {
+        top: 1px;
+        left: 7px;
+        color: $rcg-int-color--white;
+    }
+}
+
+input.rcg-switch__toggle--round + label {
+    display: inline-block;
+    border-radius: $rcg-int-border-radius-circle;
+    width: 45px;
+    height: 16px;
+}
+
+input.rcg-switch__toggle--round + label:before,
+input.rcg-switch__toggle--round + label:after {
+    display: block;
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    content: '';
+}
+
+input.rcg-switch__toggle--round + label:before {
+    right: 1px;
+    transition: background 0.4s;
+    border-radius: $rcg-int-border-radius-circle;
+    background-color: $rcg-int-color--input;
+}
+
+input.rcg-switch__toggle--round + label:after {
+    transition: margin 0.2s ease-in-out;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba($rcg-int-status-color--black, 0.3);
+    background-color: $rcg-int-color--white;
+    width: 14px;
+}
+
+input.rcg-switch__toggle--round:checked + label:before {
+    background-color: $rcg-int-color--blue;
+}
+
+input.rcg-switch__toggle--round:checked + label:after {
+    margin-left: 27px;
+}

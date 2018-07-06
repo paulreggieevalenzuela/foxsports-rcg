@@ -1,0 +1,231 @@
+.rcg-booking-details-job__item {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: $rcg-int-margin--sm;
+    border-radius: $rcg-int-border-radius-all;
+    background: $rcg-int-color--booking-detail-item;
+    padding: $rcg-int-padding-l;
+    width: 100%;
+
+    @media screen and (min-width: $screen-lg-desktop) {
+        display: block;
+        flex-flow: unset;
+        width: 98%;
+    }
+
+    @media screen and (min-width: $screen-xl-desktop) {
+        width: 93%;
+    }
+}
+
+.rcg-booking-details-job__status-block {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+
+    @media screen and (min-width: $screen-desktop) {
+        flex-flow: row wrap;
+    }
+}
+
+.rcg-booking-details-job__status-block-number {
+    order: 0;
+    margin-top: $rcg-int-margin--xs;
+    width: 100%;
+    font-size: $rcg-int-font-size--body-content-4;
+
+    & span {
+        margin-right: $rcg-int-margin--xs;
+        color: $rcg-int-color--blue;
+        font-weight: bold;
+    }
+
+    @media screen and (min-width: $screen-desktop) {
+        margin-top: $rcg-int-margin--sm;
+        width: 50%;
+    }
+}
+
+.rcg-booking-details-job__status-block-info {
+    order: -1;
+    width: 100%;
+    text-align: right;
+
+    @media screen and (min-width: $screen-desktop) {
+        order: 1;
+        width: 50%;
+    }
+}
+
+.rcg-booking-details-job__info-block,
+.rcg-booking-details-job__info-block-main {
+    width: 100%;
+}
+
+.rcg-booking-details-job__info-block-main {
+    margin-bottom: $rcg-int-margin--sm;
+
+    @media screen and (min-width: $screen-desktop) {
+        width: 70%;
+    }
+}
+
+.rcg-booking-details-job__info-main {
+    @include data-block;
+
+    dt {
+        @include data-column;
+        display: inline-block;
+        width: 35%;
+        color: $rcg-int-color--blue;
+        font-weight: bold;
+    }
+
+    dd {
+        @include data-column;
+        display: inline-block;
+        width: 65%;
+    }
+
+    @media screen and (min-width: $screen-desktop) {
+        dt,
+        dd {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.rcg-booking-details-job__info {
+    @include data-block;
+
+    dt {
+        @include data-column;
+        display: inline-block;
+        width: 35%;
+        color: $rcg-int-color--blue;
+        font-weight: bold;
+
+        @media screen and (min-width: $screen-desktop) {
+            width: 30%;
+        }
+    }
+
+    dd {
+        @include data-column;
+        display: inline-block;
+        width: 65%;
+        word-break: break-all;
+
+        @media screen and (min-width: $screen-desktop) {
+            width: 70%;
+        }
+    }
+}
+
+.rcg-booking-details-job__all-caps {
+    text-transform: uppercase;
+}
+
+.rcg-booking-details-job__filter-button {
+    margin: $rcg-int-margin--sm 0;
+    width: 100%;
+}
+
+.rcg-booking-details-job__filter-restart-button {
+    @include form-button
+}
+
+// BOOKING DETAIL JOBS STATUS
+.rcg-booking-details-job__status {
+    display: inline;
+    border-radius: $rcg-int-border-radius-all;
+    padding: 4px 8px;
+    font-size: $rcg-int-font-size--body-content-7;
+    font-weight: bold;
+
+    &--scheduled {
+        background-color: $rcg-int-status-color--blue;
+        color: $rcg-int-status-color--black;
+    }
+
+    &--completed {
+        background-color: $rcg-int-status-color--green;
+        color: $rcg-int-status-color--black;
+    }
+
+    &--cancelled {
+        background-color: $rcg-int-status-color--red;
+        color: $rcg-int-color--white;
+    }
+
+    &--failed {
+        background-color: $rcg-int-status-color--yellow;
+        color: $rcg-int-status-color--black;
+    }
+
+    &--running {
+        background-color: $rcg-int-status-color--pink;
+        color: $rcg-int-color--white;
+    }
+
+    &--initiated {
+        background-color: $rcg-int-status-color--pink;
+        color: $rcg-int-color--white;
+    }
+
+    &--corrupted {
+        background-color: $rcg-int-status-color--yellow;
+        color: $rcg-int-color--white;
+    }
+
+    &--queued {
+        background-color: $rcg-int-status-color--blue;
+        color: $rcg-int-color--white;
+    }
+
+    &--stop-init {
+        background-color: $rcg-int-status-color--red;
+        color: $rcg-int-color--white;
+    }
+
+    &--processed {
+        background-color: $rcg-int-status-color--green;
+        color: $rcg-int-status-color--black;
+    }
+}
+
+.rcg-job__restart-button,
+.rcg-job__turn-on-data-button {
+    @include form-button;
+    margin: $rcg-int-margin 0;
+    padding: $rcg-int-padding;
+
+    &--disabled {
+        cursor: progress;
+    }
+}
+
+.rcg-job__restart-button-icon,
+.rcg-job__turn-on-data-button-icon {
+    margin-right: $rcg-int-margin;
+}
+
+.rcg-job__restart-message {
+    margin-left: $rcg-int-margin;
+
+    &--switch-success {
+        background-color: $rcg-int-status-color--green;
+        color: $rcg-int-status-color--black;
+    }
+
+    &--switch-failed {
+        background-color: $rcg-int-status-color--red;
+        color: $rcg-int-status-color--black;
+    }
+
+    &--switch-ignored {
+        background-color: $rcg-int-status-color--yellow;
+        color: $rcg-int-status-color--black;
+    }
+}

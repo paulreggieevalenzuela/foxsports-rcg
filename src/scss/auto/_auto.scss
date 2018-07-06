@@ -1,0 +1,96 @@
+.rcg-auto {
+    display: flex;
+    background: $rcg-auto-bg;
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+    color: $rcg-auto-color--white;
+    font-family: 'Roboto', sans-serif;
+    font-size: $rcg-auto-font-size--body-content-6;
+}
+
+.rcg-auto__sidebar {
+    background: $rcg-auto-sidebar-bg;
+    padding: 1vw;
+    width: 16vw;
+    min-height: 100vh;
+}
+
+.rcg-auto__main-container {
+    padding: 0 1vw;
+    width: 84vw;
+}
+
+.rcg-auto__bookings {
+    display: block;
+    position: relative;
+    z-index: 5; // overlay header on list slider
+    width: 100%;
+    text-transform: uppercase;
+    font-size: $rcg-auto-font-size--body-content-6;
+    font-weight: bold;
+
+    ul {
+        display: flex;
+        align-items: center;
+        border-radius: $rcg-auto-border-radius-bottom;
+        background: $rcg-auto-list-header-color;
+        padding: $rcg-auto-padding-xs 0;
+        list-style: none;
+    }
+
+    li {
+        padding: 0 $rcg-auto-padding-sm;
+        text-align: center;
+        text-transform: uppercase;
+        color: $rcg-auto-color--white;
+    }
+}
+
+.rcg-auto__bookings-list-tracker {
+    flex: 0.5;
+}
+
+.rcg-auto__bookings-list-time,
+.rcg-auto__bookings-list-work-order,
+.rcg-auto__bookings-list-comms {
+    flex: 1;
+}
+
+.rcg-auto__bookings-list-sport {
+    flex: 3.5;
+    font-size: $rcg-auto-font-size--body-content-5;
+}
+
+.rcg-auto__bookings-list-signal-path,
+.rcg-auto__bookings-list-return-path,
+.rcg-auto__bookings-list-splits {
+    flex: 2;
+}
+
+.rcg-auto__end-marker {
+    display: block;
+    position: relative;
+    z-index: 2;
+    border-radius: $rcg-auto-border-radius-all;
+    background-color: $rcg-auto-color--grey;
+    padding: $rcg-auto-padding-xs $rcg-auto-padding-m;
+    width: 100%;
+    list-style: none;
+
+    li {
+        text-align: center;
+        text-transform: uppercase;
+        color: $rcg-auto-color--white;
+    }
+}
+
+.slider-decorator-0,
+.slider-decorator-1,
+.slider-decorator-2 {
+    display: none;
+}
+
+.slider-frame {
+    overflow: initial !important;
+}

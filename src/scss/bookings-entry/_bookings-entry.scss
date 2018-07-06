@@ -1,0 +1,139 @@
+.rcg-auto-bookings-list__tracker-item {
+    margin: 0 auto;
+    border-radius: $rcg-int-border-radius-circle;
+    background-color: $rcg-auto-color--white;
+    width: 1vw;
+    height: 1vw;
+    color: transparent;
+}
+
+.rcg-auto-bookings-list {
+    display: flex;
+    position: relative;
+    z-index: 0;
+    padding: ($rcg-auto-padding-xs / 2) 0;
+    list-style: none;
+
+    &--scheduled {
+        .rcg-auto-bookings-list__tracker-item {
+            background-color: $rcg-auto-color--scheduled;
+        }
+    }
+
+    &--processed {
+        .rcg-auto-bookings-list__tracker-item {
+            background-color: $rcg-auto-color--processed;
+        }
+    }
+
+    &--completed {
+        .rcg-auto-bookings-list__tracker-item {
+            background-color: $rcg-auto-color--completed;
+        }
+    }
+
+    &--corrupted {
+        .rcg-auto-bookings-list__tracker-item {
+            background-color: $rcg-auto-color--corrupted;
+        }
+    }
+
+    &--failed {
+        .rcg-auto-bookings-list__tracker-item {
+            background-color: $rcg-auto-color--failed;
+        }
+    }
+
+    &--initiated {
+        .rcg-auto-bookings-list__tracker-item {
+            background-color: $rcg-auto-color--initiated;
+        }
+    }
+
+    &--running {
+        .rcg-auto-bookings-list__tracker-item {
+            background-color: $rcg-auto-color--running;
+        }
+    }
+
+    &--cancelled {
+        .rcg-auto-bookings-list__tracker-item {
+            background-color: $rcg-auto-color--cancelled;
+        }
+    }
+
+    &--queued {
+        .rcg-auto-bookings-list__tracker-item {
+            background-color: $rcg-auto-color--queued;
+        }
+    }
+
+    &--stop-init {
+        .rcg-auto-bookings-list__tracker-item {
+            background-color: $rcg-auto-color--stop-init;
+        }
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        background-color: $rcg-auto-bookings-bg-color--alt;
+        padding: $rcg-auto-padding-xs $rcg-auto-padding-m;
+        width: 100%;
+        text-transform: uppercase;
+        color: $rcg-auto-color--white;
+
+        &:first-child {
+            border-radius: $rcg-auto-border-radius-left;
+        }
+
+        &:last-child {
+            border-radius: $rcg-auto-border-radius-right;
+        }
+
+        &:nth-child(odd) {
+            background-color: $rcg-auto-bookings-bg-color;
+        }
+    }
+}
+
+.rcg-auto-bookings-list__tracker {
+    flex: 0.25;
+    text-align: center;
+}
+
+.rcg-auto-bookings-list__time {
+    flex: 1;
+    font-size: $rcg-auto-font-size--body-content-4;
+    font-weight: normal;
+}
+
+.rcg-auto-bookings-list__time-container {
+    width: 100%;
+    text-align: center;
+}
+
+.rcg-auto-bookings-list__time-container hr {
+    margin-top: 0;
+    margin-bottom: 2px;
+    width: 60%;
+}
+
+.rcg-auto-bookings-list__sport {
+    flex: 3.5;
+    font-size: $rcg-auto-font-size--body-content-5;
+}
+
+.rcg-auto-bookings-list__comms,
+.rcg-auto-bookings-list__working-order {
+    flex: 1;
+    justify-content: center;
+    font-size: $rcg-auto-font-size--body-content-3;
+}
+
+.rcg-auto-bookings-list__signal-path,
+.rcg-auto-bookings-list__return-path,
+.rcg-auto-bookings-list__splits {
+    flex: 2;
+    font-size: $rcg-auto-font-size--body-content-3;
+}

@@ -1,0 +1,1205 @@
+[
+    {
+        "id": 330949,
+        "type": null,
+        "name": "BSK_NBL_PER_V_CNS_RND16_2016_17_CAPTIONS_BACKUP",
+        "path": {
+            "id": 235493,
+            "routes": [
+                {
+                    "id": 337298,
+                    "source": {
+                        "id": 656080,
+                        "port": "118",
+                        "name": "EVSXS06REC2",
+                        "displayName": "XS06REC2",
+                        "sessionId": "2755123",
+                        "previousSessionId": "2755122",
+                        "type": "Recording Device",
+                        "start": "2017-01-30T21:15:00+11:00",
+                        "end": "2017-01-30T00:15:00+11:00",
+                        "creation_date": "2017-01-30T02:14:13+11:00",
+                        "modified_date": "2017-01-30T02:14:13+11:00"
+                    },
+                    "destination": {
+                        "id": 656079,
+                        "port": "CLOSED",
+                        "name": "MARKER",
+                        "displayName": "CLOSED_CAPTIONS",
+                        "sessionId": "2755124",
+                        "previousSessionId": "2755123",
+                        "type": "Marker Closed Captions",
+                        "start": "2017-01-30T21:15:00+11:00",
+                        "end": "2017-01-30T00:15:00+11:00",
+                        "creation_date": "2017-01-30T02:14:13+11:00",
+                        "modified_date": "2017-01-30T02:14:13+11:00"
+                    },
+                    "switchable": false,
+                    "creation_date": "2017-01-30T02:14:13+11:00",
+                    "modified_date": "2017-01-30T02:14:13+11:00"
+                },
+                {
+                    "id": 337299,
+                    "source": {
+                        "id": 656082,
+                        "port": "387",
+                        "name": "FOX SPORTS 3 Off Air",
+                        "displayName": "FOX SPORTS 3 (Off Air)",
+                        "sessionId": "2755122",
+                        "previousSessionId": "2755122",
+                        "type": "Channel",
+                        "start": "2017-01-30T21:15:00+11:00",
+                        "end": "2017-01-30T00:15:00+11:00",
+                        "creation_date": "2017-01-30T02:14:13+11:00",
+                        "modified_date": "2017-01-30T02:14:13+11:00"
+                    },
+                    "destination": {
+                        "id": 656081,
+                        "port": "118",
+                        "name": "EVSXS06REC2",
+                        "displayName": "XS06REC2",
+                        "sessionId": "2755123",
+                        "previousSessionId": "2755122",
+                        "type": "Recording Device",
+                        "start": "2017-01-30T21:15:00+11:00",
+                        "end": "2017-01-30T00:15:00+11:00",
+                        "creation_date": "2017-01-30T02:14:13+11:00",
+                        "modified_date": "2017-01-30T02:14:13+11:00"
+                    },
+                    "switchable": true,
+                    "creation_date": "2017-01-30T02:14:13+11:00",
+                    "modified_date": "2017-01-30T02:14:13+11:00"
+                }
+            ],
+            "creation_date": "2017-01-30T02:14:13+11:00",
+            "modified_date": "2017-01-30T02:14:13+11:00"
+        },
+        "bookingMetadata": {
+            "id": 79836,
+            "sport": "BSK",
+            "sportID": "",
+            "competition": "NBL",
+            "teamA": "PER",
+            "teamB": "CNS",
+            "round": "RND16",
+            "year": "2016 17",
+            "suffix": "Captions Backup",
+            "project": "",
+            "matchID": "",
+            "fixtureID": "",
+            "splits": [
+                ""
+            ],
+            "returns": [
+                ""
+            ],
+            "signals": [
+                ""
+            ],
+            "foxSportsNews": false,
+            "voiceOver": false,
+            "manualName": "",
+            "creation_date": "2017-01-30T02:14:13+11:00",
+            "modified_date": "2017-01-30T02:14:13+11:00"
+        },
+        "status": "RUNNING",
+        "jobs": [
+            {
+                "description": "Router Switch",
+                "id": 1185223,
+                "status": "RUNNING",
+                "routes": "118<387",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T02:14:13+11:00",
+                "modified_date": "2017-01-30T02:14:13+11:00",
+                "failure_reason": null,
+                "switch_time": "2017-01-20T21:15:00+11:00",
+                "route_resources": "EVSXS06REC2<FOX SPORTS 3 Off Air",
+                "is_manual_switch": false,
+                "is_blocking": true
+            },
+            {
+                "description": "Clip",
+                "id": 1185224,
+                "status": "RUNNING",
+                "destination": null,
+                "recorder": "EVSXS06REC2",
+                "name": "BSK_NBL_PER_V_CNS_RND16_2016_17_CAPTIONS_BACKUP",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T02:14:13+11:00",
+                "modified_date": "2017-01-30T02:14:13+11:00",
+                "failure_reason": null,
+                "clip_id": "b4afd17e-dbd2-419d-9208-06f7a0d004b5",
+                "start": "2017-01-30T21:15:00+11:00",
+                "end": "2017-01-30T00:15:00+11:00",
+                "closed_captioned": true,
+                "is_blocking": false
+            }
+        ],
+        "creation_date": "2017-01-30T02:14:13+11:00",
+        "modified_date": "2017-01-30T02:14:13+11:00",
+        "booking_id": "455979",
+        "start_now": false,
+        "start": "2017-01-30T21:15:00+11:00",
+        "end": "2017-01-30T00:15:00+11:00",
+        "send_to_ardome": false,
+        "send_to_avid": false,
+        "send_to_evs": true,
+        "ingest": null,
+        "foxsports_booking_id": "454359",
+        "full_path_switching": false,
+        "quantel_booking": false,
+        "closed_captioned": true,
+        "is_future": true,
+        "livestream_booking": false,
+        "evs_booking": true,
+        "is_running": false
+    },
+    {
+        "id": 330928,
+        "type": null,
+        "name": "BSK_NBL_PER_V_CNS_RND16_2016_17_DIRTY",
+        "path": {
+            "id": 235468,
+            "routes": [
+                {
+                    "id": 337240,
+                    "source": {
+                        "id": 655971,
+                        "port": "404",
+                        "name": "STS RX05",
+                        "displayName": "STS RX05",
+                        "sessionId": "2731929",
+                        "previousSessionId": "2731928",
+                        "type": "Network",
+                        "start": "2017-01-30T21:00:00+11:00",
+                        "end": "2017-01-30T00:00:00+11:00",
+                        "creation_date": "2017-01-30T17:34:35+11:00",
+                        "modified_date": "2017-01-30T17:34:35+11:00"
+                    },
+                    "destination": {
+                        "id": 655970,
+                        "port": "77",
+                        "name": "Framestore 15",
+                        "displayName": "FStore 15",
+                        "sessionId": "2731930",
+                        "previousSessionId": "2731929",
+                        "type": "Framestore",
+                        "start": "2017-01-30T21:00:00+11:00",
+                        "end": "2017-01-30T00:00:00+11:00",
+                        "creation_date": "2017-01-30T17:34:35+11:00",
+                        "modified_date": "2017-01-30T17:34:35+11:00"
+                    },
+                    "switchable": true,
+                    "creation_date": "2017-01-30T17:34:35+11:00",
+                    "modified_date": "2017-01-30T17:34:35+11:00"
+                },
+                {
+                    "id": 337241,
+                    "source": null,
+                    "destination": {
+                        "id": 655972,
+                        "port": "00",
+                        "name": "STS RX06",
+                        "displayName": "STS RX06",
+                        "sessionId": "2731932",
+                        "previousSessionId": "2731928",
+                        "type": "Network",
+                        "start": "2017-01-30T21:00:00+11:00",
+                        "end": "2017-01-30T00:00:00+11:00",
+                        "creation_date": "2017-01-30T17:34:35+11:00",
+                        "modified_date": "2017-01-30T17:34:35+11:00"
+                    },
+                    "switchable": false,
+                    "creation_date": "2017-01-30T17:34:35+11:00",
+                    "modified_date": "2017-01-30T17:34:35+11:00"
+                },
+                {
+                    "id": 337242,
+                    "source": null,
+                    "destination": {
+                        "id": 655973,
+                        "port": null,
+                        "name": "gearhouse-hd1",
+                        "displayName": "OSB - HD1",
+                        "sessionId": "2752194",
+                        "previousSessionId": "2731927",
+                        "type": "Truck",
+                        "start": "2017-01-30T21:00:00+11:00",
+                        "end": "2017-01-30T00:00:00+11:00",
+                        "creation_date": "2017-01-30T17:34:35+11:00",
+                        "modified_date": "2017-01-30T17:34:35+11:00"
+                    },
+                    "switchable": false,
+                    "creation_date": "2017-01-30T17:34:35+11:00",
+                    "modified_date": "2017-01-30T17:34:35+11:00"
+                },
+                {
+                    "id": 337243,
+                    "source": {
+                        "id": 655975,
+                        "port": "00",
+                        "name": "EVSXS04REC5",
+                        "displayName": "XS04REC5",
+                        "sessionId": "2757697",
+                        "previousSessionId": "2755112",
+                        "type": "Recording Device",
+                        "start": "2017-01-30T21:00:00+11:00",
+                        "end": "2017-01-30T00:00:00+11:00",
+                        "creation_date": "2017-01-30T17:34:35+11:00",
+                        "modified_date": "2017-01-30T17:34:35+11:00"
+                    },
+                    "destination": {
+                        "id": 655974,
+                        "port": "CLOSED",
+                        "name": "MARKER",
+                        "displayName": "CLOSED_CAPTIONS",
+                        "sessionId": "2755113",
+                        "previousSessionId": "2757697",
+                        "type": "Marker Closed Captions",
+                        "start": "2017-01-30T21:00:00+11:00",
+                        "end": "2017-01-30T00:00:00+11:00",
+                        "creation_date": "2017-01-30T17:34:35+11:00",
+                        "modified_date": "2017-01-30T17:34:35+11:00"
+                    },
+                    "switchable": false,
+                    "creation_date": "2017-01-30T17:34:35+11:00",
+                    "modified_date": "2017-01-30T17:34:35+11:00"
+                },
+                {
+                    "id": 337244,
+                    "source": {
+                        "id": 655977,
+                        "port": "429",
+                        "name": "CC Inserter 76",
+                        "displayName": "Caption Inserter 76",
+                        "sessionId": "2755112",
+                        "previousSessionId": "2731930",
+                        "type": "Closed Captions",
+                        "start": "2017-01-30T21:00:00+11:00",
+                        "end": "2017-01-30T00:00:00+11:00",
+                        "creation_date": "2017-01-30T17:34:35+11:00",
+                        "modified_date": "2017-01-30T17:34:35+11:00"
+                    },
+                    "destination": {
+                        "id": 655976,
+                        "port": "223",
+                        "name": "EVSXS04REC5",
+                        "displayName": "XS04REC5",
+                        "sessionId": "2757697",
+                        "previousSessionId": "2755112",
+                        "type": "Recording Device",
+                        "start": "2017-01-30T21:00:00+11:00",
+                        "end": "2017-01-30T00:00:00+11:00",
+                        "creation_date": "2017-01-30T17:34:35+11:00",
+                        "modified_date": "2017-01-30T17:34:35+11:00"
+                    },
+                    "switchable": true,
+                    "creation_date": "2017-01-30T17:34:35+11:00",
+                    "modified_date": "2017-01-30T17:34:35+11:00"
+                },
+                {
+                    "id": 337245,
+                    "source": {
+                        "id": 655979,
+                        "port": "77",
+                        "name": "Framestore 15",
+                        "displayName": "FStore 15",
+                        "sessionId": "2731930",
+                        "previousSessionId": "2731929",
+                        "type": "Framestore",
+                        "start": "2017-01-30T21:00:00+11:00",
+                        "end": "2017-01-30T00:00:00+11:00",
+                        "creation_date": "2017-01-30T17:34:35+11:00",
+                        "modified_date": "2017-01-30T17:34:35+11:00"
+                    },
+                    "destination": {
+                        "id": 655978,
+                        "port": "429",
+                        "name": "CC Inserter 76",
+                        "displayName": "Caption Inserter 76",
+                        "sessionId": "2755112",
+                        "previousSessionId": "2731930",
+                        "type": "Closed Captions",
+                        "start": "2017-01-30T21:00:00+11:00",
+                        "end": "2017-01-30T00:00:00+11:00",
+                        "creation_date": "2017-01-30T17:34:35+11:00",
+                        "modified_date": "2017-01-30T17:34:35+11:00"
+                    },
+                    "switchable": true,
+                    "creation_date": "2017-01-30T17:34:35+11:00",
+                    "modified_date": "2017-01-30T17:34:35+11:00"
+                }
+            ],
+            "creation_date": "2017-01-30T17:34:35+11:00",
+            "modified_date": "2017-01-30T17:34:35+11:00"
+        },
+        "bookingMetadata": {
+            "id": 79815,
+            "sport": "BSK",
+            "sportID": "",
+            "competition": "NBL",
+            "teamA": "PER",
+            "teamB": "CNS",
+            "round": "RND16",
+            "year": "2016 17",
+            "suffix": "DIRTY",
+            "project": "",
+            "matchID": "",
+            "fixtureID": "",
+            "splits": [
+                ""
+            ],
+            "returns": [
+                ""
+            ],
+            "signals": [
+                ""
+            ],
+            "foxSportsNews": false,
+            "voiceOver": false,
+            "manualName": "",
+            "creation_date": "2017-01-30T17:34:35+11:00",
+            "modified_date": "2017-01-30T17:34:35+11:00"
+        },
+        "status": "RUNNING",
+        "jobs": [
+            {
+                "description": "Router Switch",
+                "id": 1185092,
+                "status": "RUNNING",
+                "routes": "77<404",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T17:34:35+11:00",
+                "modified_date": "2017-01-30T17:34:35+11:00",
+                "failure_reason": null,
+                "switch_time": "2017-01-20T21:00:00+11:00",
+                "route_resources": "Framestore 15<STS RX05",
+                "is_manual_switch": false,
+                "is_blocking": true
+            },
+            {
+                "description": "Router Switch",
+                "id": 1185093,
+                "status": "RUNNING",
+                "routes": "223<429",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T17:34:35+11:00",
+                "modified_date": "2017-01-30T17:34:35+11:00",
+                "failure_reason": null,
+                "switch_time": "2017-01-20T21:00:00+11:00",
+                "route_resources": "EVSXS04REC5<CC Inserter 76",
+                "is_manual_switch": false,
+                "is_blocking": true
+            },
+            {
+                "description": "Router Switch",
+                "id": 1185094,
+                "status": "RUNNING",
+                "routes": "429<77",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T17:34:35+11:00",
+                "modified_date": "2017-01-30T17:34:35+11:00",
+                "failure_reason": null,
+                "switch_time": "2017-01-20T21:00:00+11:00",
+                "route_resources": "CC Inserter 76<Framestore 15",
+                "is_manual_switch": false,
+                "is_blocking": true
+            },
+            {
+                "description": "Clip",
+                "id": 1185095,
+                "status": "RUNNING",
+                "destination": null,
+                "recorder": "EVSXS04REC5",
+                "name": "BSK_NBL_PER_V_CNS_RND16_2016_17_DIRTY",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T17:34:35+11:00",
+                "modified_date": "2017-01-30T17:34:35+11:00",
+                "failure_reason": null,
+                "clip_id": "20fdb15f-a199-464a-8c4b-9a7409d38e4f",
+                "start": "2017-01-30T21:00:00+11:00",
+                "end": "2017-01-30T00:00:00+11:00",
+                "closed_captioned": true,
+                "is_blocking": false
+            }
+        ],
+        "creation_date": "2017-01-30T17:34:35+11:00",
+        "modified_date": "2017-01-30T17:34:35+11:00",
+        "booking_id": "453125",
+        "start_now": false,
+        "start": "2017-01-30T21:00:00+11:00",
+        "end": "2017-01-30T00:00:00+11:00",
+        "send_to_ardome": false,
+        "send_to_avid": true,
+        "send_to_evs": true,
+        "ingest": null,
+        "foxsports_booking_id": "451505",
+        "full_path_switching": true,
+        "quantel_booking": false,
+        "closed_captioned": true,
+        "is_future": true,
+        "livestream_booking": false,
+        "evs_booking": true,
+        "is_running": false
+    },
+    {
+        "id": 330785,
+        "type": null,
+        "name": "FSN_FOX_SPORTS_NEWS_2100_2017_STU_PGM",
+        "path": {
+            "id": 235311,
+            "routes": [
+                {
+                    "id": 337022,
+                    "source": {
+                        "id": 655551,
+                        "port": "123",
+                        "name": "Studio News ISO 1",
+                        "displayName": "Studio News ISO 1",
+                        "sessionId": "2731143",
+                        "previousSessionId": "2731143",
+                        "type": "Studio",
+                        "start": "2017-01-30T20:45:00+11:00",
+                        "end": "2017-01-30T21:45:00+11:00",
+                        "creation_date": "2017-01-30T07:47:46+11:00",
+                        "modified_date": "2017-01-30T07:47:46+11:00"
+                    },
+                    "destination": {
+                        "id": 655550,
+                        "port": "117",
+                        "name": "EVSXS01REC1",
+                        "displayName": "XS01REC1",
+                        "sessionId": "2731144",
+                        "previousSessionId": "2731143",
+                        "type": "Recording Device",
+                        "start": "2017-01-30T20:45:00+11:00",
+                        "end": "2017-01-30T21:45:00+11:00",
+                        "creation_date": "2017-01-30T07:47:45+11:00",
+                        "modified_date": "2017-01-30T07:47:45+11:00"
+                    },
+                    "switchable": true,
+                    "creation_date": "2017-01-30T07:47:45+11:00",
+                    "modified_date": "2017-01-30T07:47:45+11:00"
+                }
+            ],
+            "creation_date": "2017-01-30T07:47:45+11:00",
+            "modified_date": "2017-01-30T07:47:45+11:00"
+        },
+        "bookingMetadata": {
+            "id": 79672,
+            "sport": "FSN",
+            "sportID": "",
+            "competition": "Fox Sports News",
+            "teamA": "",
+            "teamB": "",
+            "round": "",
+            "year": "2017",
+            "suffix": "STU PGM",
+            "project": "",
+            "matchID": "",
+            "fixtureID": "",
+            "splits": [
+                ""
+            ],
+            "returns": [
+                ""
+            ],
+            "signals": [
+                ""
+            ],
+            "foxSportsNews": false,
+            "voiceOver": false,
+            "manualName": "2100",
+            "creation_date": "2017-01-30T07:47:45+11:00",
+            "modified_date": "2017-01-30T07:47:46+11:00"
+        },
+        "status": "PROCESSED",
+        "jobs": [
+            {
+                "description": "Router Switch",
+                "id": 1184646,
+                "status": "COMPLETED",
+                "routes": "117<123",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T07:47:46+11:00",
+                "modified_date": "2017-01-30T07:47:46+11:00",
+                "failure_reason": null,
+                "switch_time": "2017-01-20T20:45:00+11:00",
+                "route_resources": "EVSXS01REC1<Studio News ISO 1",
+                "is_manual_switch": false,
+                "is_blocking": true
+            },
+            {
+                "description": "Clip",
+                "id": 1184647,
+                "status": "COMPLETED",
+                "destination": null,
+                "recorder": "EVSXS01REC1",
+                "name": "FSN_FOX_SPORTS_NEWS_2100_2017_STU_PGM",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T07:47:46+11:00",
+                "modified_date": "2017-01-30T07:47:46+11:00",
+                "failure_reason": null,
+                "clip_id": "a1e4defe-d26b-4073-b6aa-a5d1643d7e47",
+                "start": "2017-01-30T20:45:00+11:00",
+                "end": "2017-01-30T21:45:00+11:00",
+                "closed_captioned": false,
+                "is_blocking": false
+            }
+        ],
+        "creation_date": "2017-01-30T07:47:45+11:00",
+        "modified_date": "2017-01-30T07:47:45+11:00",
+        "booking_id": "452980",
+        "start_now": false,
+        "start": "2017-01-30T20:45:00+11:00",
+        "end": "2017-01-30T21:45:00+11:00",
+        "send_to_ardome": false,
+        "send_to_avid": true,
+        "send_to_evs": true,
+        "ingest": null,
+        "foxsports_booking_id": "451360",
+        "full_path_switching": false,
+        "quantel_booking": false,
+        "closed_captioned": false,
+        "is_future": true,
+        "livestream_booking": false,
+        "evs_booking": true,
+        "is_running": false
+    },
+    {
+        "id": 331040,
+        "type": null,
+        "name": "FSN_FSN_TO_SKY_NZ_2016",
+        "path": {
+            "id": 235592,
+            "routes": [
+                {
+                    "id": 337404,
+                    "source": {
+                        "id": 656291,
+                        "port": "339",
+                        "name": "ISDN 2",
+                        "displayName": "ISDN 2",
+                        "sessionId": "2759652",
+                        "previousSessionId": "2759651",
+                        "type": "Audio Extraction",
+                        "start": "2017-01-30T20:30:00+11:00",
+                        "end": "2017-01-30T21:45:00+11:00",
+                        "creation_date": "2017-01-30T13:08:19+11:00",
+                        "modified_date": "2017-01-30T13:08:19+11:00"
+                    },
+                    "destination": {
+                        "id": 656290,
+                        "port": "18",
+                        "name": "TBS TX 3-12",
+                        "displayName": "TBS TX 06 (3-1/2)",
+                        "sessionId": "2759653",
+                        "previousSessionId": "2759652",
+                        "type": "Network",
+                        "start": "2017-01-30T20:30:00+11:00",
+                        "end": "2017-01-30T21:45:00+11:00",
+                        "creation_date": "2017-01-30T13:08:19+11:00",
+                        "modified_date": "2017-01-30T13:08:19+11:00"
+                    },
+                    "switchable": true,
+                    "creation_date": "2017-01-30T13:08:19+11:00",
+                    "modified_date": "2017-01-30T13:08:19+11:00"
+                }
+            ],
+            "creation_date": "2017-01-30T13:08:19+11:00",
+            "modified_date": "2017-01-30T13:08:19+11:00"
+        },
+        "bookingMetadata": {
+            "id": 79927,
+            "sport": "FSN",
+            "sportID": "",
+            "competition": "",
+            "teamA": "",
+            "teamB": "",
+            "round": "",
+            "year": "2016",
+            "suffix": "",
+            "project": "",
+            "matchID": "",
+            "fixtureID": "",
+            "splits": [
+                ""
+            ],
+            "returns": [
+                ""
+            ],
+            "signals": [
+                ""
+            ],
+            "foxSportsNews": false,
+            "voiceOver": false,
+            "manualName": "FSN to SKY NZ",
+            "creation_date": "2017-01-30T13:08:19+11:00",
+            "modified_date": "2017-01-30T13:08:19+11:00"
+        },
+        "status": "CORRUPTED",
+        "jobs": [
+            {
+                "description": "Router Switch",
+                "id": 1185506,
+                "status": "SCHEDULED",
+                "routes": "18<339",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T13:08:19+11:00",
+                "modified_date": "2017-01-30T13:08:19+11:00",
+                "failure_reason": null,
+                "switch_time": "2017-01-20T20:30:00+11:00",
+                "route_resources": "TBS TX 3-12<ISDN 2",
+                "is_manual_switch": false,
+                "is_blocking": true
+            }
+        ],
+        "creation_date": "2017-01-30T13:08:19+11:00",
+        "modified_date": "2017-01-30T13:08:19+11:00",
+        "booking_id": "456858",
+        "start_now": false,
+        "start": "2017-01-30T20:30:00+11:00",
+        "end": "2017-01-30T21:45:00+11:00",
+        "send_to_ardome": false,
+        "send_to_avid": true,
+        "send_to_evs": true,
+        "ingest": null,
+        "foxsports_booking_id": "455238",
+        "full_path_switching": true,
+        "quantel_booking": false,
+        "closed_captioned": false,
+        "is_future": true,
+        "livestream_booking": false,
+        "evs_booking": false,
+        "is_running": false
+    },
+    {
+        "id": 330807,
+        "type": null,
+        "name": "GEN_0730_2017_OA",
+        "path": {
+            "id": 235333,
+            "routes": [
+                {
+                    "id": 337044,
+                    "source": {
+                        "id": 655595,
+                        "port": "29",
+                        "name": "ABC",
+                        "displayName": "ABC",
+                        "sessionId": "2730887",
+                        "previousSessionId": "2730887",
+                        "type": "Channel",
+                        "start": "2017-01-30T19:25:00+11:00",
+                        "end": "2017-01-30T20:05:00+11:00",
+                        "creation_date": "2017-01-30T08:01:38+11:00",
+                        "modified_date": "2017-01-30T08:01:38+11:00"
+                    },
+                    "destination": {
+                        "id": 655594,
+                        "port": "127",
+                        "name": "EVSXS02REC5",
+                        "displayName": "XS02REC5",
+                        "sessionId": "2730888",
+                        "previousSessionId": "2730887",
+                        "type": "Recording Device",
+                        "start": "2017-01-30T19:25:00+11:00",
+                        "end": "2017-01-30T20:05:00+11:00",
+                        "creation_date": "2017-01-30T08:01:38+11:00",
+                        "modified_date": "2017-01-30T08:01:38+11:00"
+                    },
+                    "switchable": true,
+                    "creation_date": "2017-01-30T08:01:38+11:00",
+                    "modified_date": "2017-01-30T08:01:38+11:00"
+                }
+            ],
+            "creation_date": "2017-01-30T08:01:38+11:00",
+            "modified_date": "2017-01-30T08:01:38+11:00"
+        },
+        "bookingMetadata": {
+            "id": 79694,
+            "sport": "GEN",
+            "sportID": "",
+            "competition": "0730",
+            "teamA": "",
+            "teamB": "",
+            "round": "",
+            "year": "2017",
+            "suffix": "OA",
+            "project": "",
+            "matchID": "",
+            "fixtureID": "",
+            "splits": [
+                ""
+            ],
+            "returns": [
+                ""
+            ],
+            "signals": [
+                ""
+            ],
+            "foxSportsNews": false,
+            "voiceOver": false,
+            "manualName": "",
+            "creation_date": "2017-01-30T08:01:38+11:00",
+            "modified_date": "2017-01-30T08:01:38+11:00"
+        },
+        "status": "SCHEDULED",
+        "jobs": [
+            {
+                "description": "Router Switch",
+                "id": 1184691,
+                "status": "SCHEDULED",
+                "routes": "127<29",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T08:01:38+11:00",
+                "modified_date": "2017-01-30T08:01:38+11:00",
+                "failure_reason": null,
+                "switch_time": "2017-01-20T19:25:00+11:00",
+                "route_resources": "EVSXS02REC5<ABC",
+                "is_manual_switch": false,
+                "is_blocking": true
+            },
+            {
+                "description": "Clip",
+                "id": 1184692,
+                "status": "SCHEDULED",
+                "destination": null,
+                "recorder": "EVSXS02REC5",
+                "name": "GEN_0730_2017_OA",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T08:01:38+11:00",
+                "modified_date": "2017-01-30T08:01:38+11:00",
+                "failure_reason": null,
+                "clip_id": "69a5303e-d572-4f9e-917c-2e91fd26be12",
+                "start": "2017-01-30T19:25:00+11:00",
+                "end": "2017-01-30T20:05:00+11:00",
+                "closed_captioned": false,
+                "is_blocking": false
+            }
+        ],
+        "creation_date": "2017-01-30T08:01:38+11:00",
+        "modified_date": "2017-01-30T08:01:38+11:00",
+        "booking_id": "452852",
+        "start_now": false,
+        "start": "2017-01-30T19:25:00+11:00",
+        "end": "2017-01-30T20:05:00+11:00",
+        "send_to_ardome": false,
+        "send_to_avid": true,
+        "send_to_evs": true,
+        "ingest": null,
+        "foxsports_booking_id": "451232",
+        "full_path_switching": false,
+        "quantel_booking": false,
+        "closed_captioned": false,
+        "is_future": true,
+        "livestream_booking": false,
+        "evs_booking": true,
+        "is_running": false
+    },
+    {
+        "id": 330947,
+        "type": null,
+        "name": "BSK_NBL_ILL_V_NZL_RND16_2016_17_CAPTIONS_BACKUP",
+        "path": {
+            "id": 235491,
+            "routes": [
+                {
+                    "id": 337294,
+                    "source": {
+                        "id": 656072,
+                        "port": "118",
+                        "name": "EVSXS06REC2",
+                        "displayName": "XS06REC2",
+                        "sessionId": "2755117",
+                        "previousSessionId": "2755116",
+                        "type": "Recording Device",
+                        "start": "2017-01-30T19:15:00+11:00",
+                        "end": "2017-01-30T22:15:00+11:00",
+                        "creation_date": "2017-01-30T02:12:35+11:00",
+                        "modified_date": "2017-01-30T02:12:35+11:00"
+                    },
+                    "destination": {
+                        "id": 656071,
+                        "port": "CLOSED",
+                        "name": "MARKER",
+                        "displayName": "CLOSED_CAPTIONS",
+                        "sessionId": "2755118",
+                        "previousSessionId": "2755117",
+                        "type": "Marker Closed Captions",
+                        "start": "2017-01-30T19:15:00+11:00",
+                        "end": "2017-01-30T22:15:00+11:00",
+                        "creation_date": "2017-01-30T02:12:35+11:00",
+                        "modified_date": "2017-01-30T02:12:35+11:00"
+                    },
+                    "switchable": false,
+                    "creation_date": "2017-01-30T02:12:35+11:00",
+                    "modified_date": "2017-01-30T02:12:35+11:00"
+                },
+                {
+                    "id": 337295,
+                    "source": {
+                        "id": 656074,
+                        "port": "387",
+                        "name": "FOX SPORTS 3 Off Air",
+                        "displayName": "FOX SPORTS 3 (Off Air)",
+                        "sessionId": "2755116",
+                        "previousSessionId": "2755116",
+                        "type": "Channel",
+                        "start": "2017-01-30T19:15:00+11:00",
+                        "end": "2017-01-30T22:15:00+11:00",
+                        "creation_date": "2017-01-30T02:12:35+11:00",
+                        "modified_date": "2017-01-30T02:12:35+11:00"
+                    },
+                    "destination": {
+                        "id": 656073,
+                        "port": "118",
+                        "name": "EVSXS06REC2",
+                        "displayName": "XS06REC2",
+                        "sessionId": "2755117",
+                        "previousSessionId": "2755116",
+                        "type": "Recording Device",
+                        "start": "2017-01-30T19:15:00+11:00",
+                        "end": "2017-01-30T22:15:00+11:00",
+                        "creation_date": "2017-01-30T02:12:35+11:00",
+                        "modified_date": "2017-01-30T02:12:35+11:00"
+                    },
+                    "switchable": true,
+                    "creation_date": "2017-01-30T02:12:35+11:00",
+                    "modified_date": "2017-01-30T02:12:35+11:00"
+                }
+            ],
+            "creation_date": "2017-01-30T02:12:35+11:00",
+            "modified_date": "2017-01-30T02:12:35+11:00"
+        },
+        "bookingMetadata": {
+            "id": 79834,
+            "sport": "BSK",
+            "sportID": "",
+            "competition": "NBL",
+            "teamA": "ILL",
+            "teamB": "NZL",
+            "round": "RND16",
+            "year": "2016 17",
+            "suffix": "Captions Backup",
+            "project": "",
+            "matchID": "",
+            "fixtureID": "",
+            "splits": [
+                ""
+            ],
+            "returns": [
+                ""
+            ],
+            "signals": [
+                ""
+            ],
+            "foxSportsNews": false,
+            "voiceOver": false,
+            "manualName": "",
+            "creation_date": "2017-01-30T02:12:35+11:00",
+            "modified_date": "2017-01-30T02:12:35+11:00"
+        },
+        "status": "CANCELLED",
+        "jobs": [
+            {
+                "description": "Router Switch",
+                "id": 1185218,
+                "status": "SCHEDULED",
+                "routes": "118<387",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T02:12:35+11:00",
+                "modified_date": "2017-01-30T02:12:35+11:00",
+                "failure_reason": null,
+                "switch_time": "2017-01-20T19:15:00+11:00",
+                "route_resources": "EVSXS06REC2<FOX SPORTS 3 Off Air",
+                "is_manual_switch": false,
+                "is_blocking": true
+            },
+            {
+                "description": "Clip",
+                "id": 1185219,
+                "status": "SCHEDULED",
+                "destination": null,
+                "recorder": "EVSXS06REC2",
+                "name": "BSK_NBL_ILL_V_NZL_RND16_2016_17_CAPTIONS_BACKUP",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T02:12:35+11:00",
+                "modified_date": "2017-01-30T02:12:35+11:00",
+                "failure_reason": null,
+                "clip_id": "afa98eb7-7ad3-4c27-904a-c21072ae623a",
+                "start": "2017-01-30T19:15:00+11:00",
+                "end": "2017-01-30T22:15:00+11:00",
+                "closed_captioned": true,
+                "is_blocking": false
+            }
+        ],
+        "creation_date": "2017-01-30T02:12:35+11:00",
+        "modified_date": "2017-01-30T02:12:35+11:00",
+        "booking_id": "455977",
+        "start_now": false,
+        "start": "2017-01-30T19:15:00+11:00",
+        "end": "2017-01-30T22:15:00+11:00",
+        "send_to_ardome": false,
+        "send_to_avid": false,
+        "send_to_evs": true,
+        "ingest": null,
+        "foxsports_booking_id": "454357",
+        "full_path_switching": false,
+        "quantel_booking": false,
+        "closed_captioned": true,
+        "is_future": true,
+        "livestream_booking": false,
+        "evs_booking": true,
+        "is_running": false
+    },
+    {
+        "id": 330786,
+        "type": null,
+        "name": "FSN_SCORE_CENTRE_2200_2017_STU_PGM",
+        "path": {
+            "id": 235312,
+            "routes": [
+                {
+                    "id": 337023,
+                    "source": {
+                        "id": 655553,
+                        "port": "123",
+                        "name": "Studio News ISO 1",
+                        "displayName": "Studio News ISO 1",
+                        "sessionId": "2731167",
+                        "previousSessionId": "2731167",
+                        "type": "Studio",
+                        "start": "2017-01-30T21:45:00+11:00",
+                        "end": "2017-01-30T22:45:00+11:00",
+                        "creation_date": "2017-01-30T07:47:56+11:00",
+                        "modified_date": "2017-01-30T07:47:56+11:00"
+                    },
+                    "destination": {
+                        "id": 655552,
+                        "port": "117",
+                        "name": "EVSXS01REC1",
+                        "displayName": "XS01REC1",
+                        "sessionId": "2731168",
+                        "previousSessionId": "2731167",
+                        "type": "Recording Device",
+                        "start": "2017-01-30T21:45:00+11:00",
+                        "end": "2017-01-30T22:45:00+11:00",
+                        "creation_date": "2017-01-30T07:47:56+11:00",
+                        "modified_date": "2017-01-30T07:47:56+11:00"
+                    },
+                    "switchable": true,
+                    "creation_date": "2017-01-30T07:47:56+11:00",
+                    "modified_date": "2017-01-30T07:47:56+11:00"
+                }
+            ],
+            "creation_date": "2017-01-30T07:47:56+11:00",
+            "modified_date": "2017-01-30T07:47:56+11:00"
+        },
+        "bookingMetadata": {
+            "id": 79673,
+            "sport": "FSN",
+            "sportID": "",
+            "competition": "Score Centre",
+            "teamA": "",
+            "teamB": "",
+            "round": "",
+            "year": "2017",
+            "suffix": "STU PGM",
+            "project": "",
+            "matchID": "",
+            "fixtureID": "",
+            "splits": [
+                ""
+            ],
+            "returns": [
+                ""
+            ],
+            "signals": [
+                ""
+            ],
+            "foxSportsNews": false,
+            "voiceOver": false,
+            "manualName": "2200",
+            "creation_date": "2017-01-30T07:47:56+11:00",
+            "modified_date": "2017-01-30T07:47:57+11:00"
+        },
+        "status": "SCHEDULED",
+        "jobs": [
+            {
+                "description": "Router Switch",
+                "id": 1184648,
+                "status": "SCHEDULED",
+                "routes": "117<123",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T07:47:56+11:00",
+                "modified_date": "2017-01-30T07:47:56+11:00",
+                "failure_reason": null,
+                "switch_time": "2017-01-20T21:45:00+11:00",
+                "route_resources": "EVSXS01REC1<Studio News ISO 1",
+                "is_manual_switch": false,
+                "is_blocking": true
+            },
+            {
+                "description": "Clip",
+                "id": 1184649,
+                "status": "SCHEDULED",
+                "destination": null,
+                "recorder": "EVSXS01REC1",
+                "name": "FSN_SCORE_CENTRE_2200_2017_STU_PGM",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T07:47:56+11:00",
+                "modified_date": "2017-01-30T07:47:56+11:00",
+                "failure_reason": null,
+                "clip_id": "02023e72-833f-429f-8360-027485a76867",
+                "start": "2017-01-30T21:45:00+11:00",
+                "end": "2017-01-30T22:45:00+11:00",
+                "closed_captioned": false,
+                "is_blocking": false
+            }
+        ],
+        "creation_date": "2017-01-30T07:47:56+11:00",
+        "modified_date": "2017-01-30T07:47:56+11:00",
+        "booking_id": "123456",
+        "start_now": false,
+        "start": "2017-01-30T21:25:00+11:00",
+        "end": "2017-01-30T22:45:00+11:00",
+        "send_to_ardome": false,
+        "send_to_avid": true,
+        "send_to_evs": true,
+        "ingest": null,
+        "foxsports_booking_id": "747487444",
+        "full_path_switching": false,
+        "quantel_booking": false,
+        "closed_captioned": false,
+        "is_future": true,
+        "livestream_booking": false,
+        "evs_booking": true,
+        "is_running": false
+    },
+    {
+        "id": 330786,
+        "type": null,
+        "name": "FSN_SCORE_CENTRE_2200_2017_STU_PGM",
+        "path": {
+            "id": 235312,
+            "routes": [
+                {
+                    "id": 337023,
+                    "source": {
+                        "id": 655553,
+                        "port": "123",
+                        "name": "Studio News ISO 1",
+                        "displayName": "Studio News ISO 1",
+                        "sessionId": "2731167",
+                        "previousSessionId": "2731167",
+                        "type": "Studio",
+                        "start": "2017-01-30T21:45:00+11:00",
+                        "end": "2017-01-30T22:45:00+11:00",
+                        "creation_date": "2017-01-30T07:47:56+11:00",
+                        "modified_date": "2017-01-30T07:47:56+11:00"
+                    },
+                    "destination": {
+                        "id": 655552,
+                        "port": "117",
+                        "name": "EVSXS01REC1",
+                        "displayName": "XS01REC1",
+                        "sessionId": "2731168",
+                        "previousSessionId": "2731167",
+                        "type": "Recording Device",
+                        "start": "2017-01-30T21:45:00+11:00",
+                        "end": "2017-01-30T22:45:00+11:00",
+                        "creation_date": "2017-01-30T07:47:56+11:00",
+                        "modified_date": "2017-01-30T07:47:56+11:00"
+                    },
+                    "switchable": true,
+                    "creation_date": "2017-01-30T07:47:56+11:00",
+                    "modified_date": "2017-01-30T07:47:56+11:00"
+                }
+            ],
+            "creation_date": "2017-01-30T07:47:56+11:00",
+            "modified_date": "2017-01-30T07:47:56+11:00"
+        },
+        "bookingMetadata": {
+            "id": 79673,
+            "sport": "FSN",
+            "sportID": "",
+            "competition": "Score Centre",
+            "teamA": "",
+            "teamB": "",
+            "round": "",
+            "year": "2017",
+            "suffix": "STU PGM",
+            "project": "",
+            "matchID": "",
+            "fixtureID": "",
+            "splits": [
+                ""
+            ],
+            "returns": [
+                ""
+            ],
+            "signals": [
+                ""
+            ],
+            "foxSportsNews": false,
+            "voiceOver": false,
+            "manualName": "2200",
+            "creation_date": "2017-01-30T07:47:56+11:00",
+            "modified_date": "2017-01-30T07:47:57+11:00"
+        },
+        "status": "SCHEDULED",
+        "jobs": [
+            {
+                "description": "Router Switch",
+                "id": 1184648,
+                "status": "SCHEDULED",
+                "routes": "117<123",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T07:47:56+11:00",
+                "modified_date": "2017-01-30T07:47:56+11:00",
+                "failure_reason": null,
+                "switch_time": "2017-01-20T21:45:00+11:00",
+                "route_resources": "EVSXS01REC1<Studio News ISO 1",
+                "is_manual_switch": false,
+                "is_blocking": true
+            },
+            {
+                "description": "Clip",
+                "id": 1184649,
+                "status": "SCHEDULED",
+                "destination": null,
+                "recorder": "EVSXS01REC1",
+                "name": "FSN_SCORE_CENTRE_2200_2017_STU_PGM",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T07:47:56+11:00",
+                "modified_date": "2017-01-30T07:47:56+11:00",
+                "failure_reason": null,
+                "clip_id": "02023e72-833f-429f-8360-027485a76867",
+                "start": "2017-01-30T21:45:00+11:00",
+                "end": "2017-01-30T22:45:00+11:00",
+                "closed_captioned": false,
+                "is_blocking": false
+            }
+        ],
+        "creation_date": "2017-01-30T07:47:56+11:00",
+        "modified_date": "2017-01-30T07:47:56+11:00",
+        "booking_id": "123456234",
+        "start_now": false,
+        "start": "2017-01-30T21:25:00+11:00",
+        "end": "2017-01-30T22:45:00+11:00",
+        "send_to_ardome": false,
+        "send_to_avid": true,
+        "send_to_evs": true,
+        "ingest": null,
+        "foxsports_booking_id": "123456",
+        "full_path_switching": false,
+        "quantel_booking": false,
+        "closed_captioned": false,
+        "is_future": true,
+        "livestream_booking": false,
+        "evs_booking": true,
+        "is_running": false
+    }
+]

@@ -1,0 +1,374 @@
+[
+    {
+        "id": 330787,
+        "type": null,
+        "name": "FSN_SCORE_CENTRE_2300_2017_STU_PGM",
+        "path": {
+            "id": 235313,
+            "routes": [
+                {
+                    "id": 337024,
+                    "source": {
+                        "id": 655555,
+                        "port": "123",
+                        "name": "Studio News ISO 1",
+                        "displayName": "Studio News ISO 1",
+                        "sessionId": "2731151",
+                        "previousSessionId": "2731151",
+                        "type": "Studio",
+                        "start": "2017-01-30T22:45:00+11:00",
+                        "end": "2017-01-30T23:45:00+11:00",
+                        "creation_date": "2017-01-30T07:48:06+11:00",
+                        "modified_date": "2017-01-30T07:48:06+11:00"
+                    },
+                    "destination": {
+                        "id": 655554,
+                        "port": "117",
+                        "name": "EVSXS01REC1",
+                        "displayName": "XS01REC1",
+                        "sessionId": "2731152",
+                        "previousSessionId": "2731151",
+                        "type": "Recording Device",
+                        "start": "2017-01-30T22:45:00+11:00",
+                        "end": "2017-01-30T23:45:00+11:00",
+                        "creation_date": "2017-01-30T07:48:06+11:00",
+                        "modified_date": "2017-01-30T07:48:06+11:00"
+                    },
+                    "switchable": true,
+                    "creation_date": "2017-01-30T07:48:06+11:00",
+                    "modified_date": "2017-01-30T07:48:06+11:00"
+                }
+            ],
+            "creation_date": "2017-01-30T23:48:06+11:00",
+            "modified_date": "2017-01-30T23:48:06+11:00"
+        },
+        "bookingMetadata": {
+            "id": 79674,
+            "sport": "FSN",
+            "sportID": "",
+            "competition": "Score Centre",
+            "teamA": "",
+            "teamB": "",
+            "round": "",
+            "year": "2017",
+            "suffix": "STU PGM",
+            "project": "",
+            "matchID": "",
+            "fixtureID": "",
+            "splits": [
+                ""
+            ],
+            "returns": [
+                ""
+            ],
+            "signals": [
+                ""
+            ],
+            "foxSportsNews": false,
+            "voiceOver": false,
+            "manualName": "2300",
+            "creation_date": "2017-01-30T07:48:06+11:00",
+            "modified_date": "2017-01-30T07:48:06+11:00"
+        },
+        "status": "SCHEDULED",
+        "jobs": [
+            {
+                "description": "Router Switch",
+                "id": 1184650,
+                "status": "SCHEDULED",
+                "routes": "117<123",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T07:48:06+11:00",
+                "modified_date": "2017-01-30T07:48:06+11:00",
+                "failure_reason": null,
+                "switch_time": "2017-01-20T22:45:00+11:00",
+                "route_resources": "EVSXS01REC1<Studio News ISO 1",
+                "is_manual_switch": false,
+                "is_blocking": true
+            },
+            {
+                "description": "Clip",
+                "id": 1184651,
+                "status": "SCHEDULED",
+                "destination": null,
+                "recorder": "EVSXS01REC1",
+                "name": "FSN_SCORE_CENTRE_2300_2017_STU_PGM",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T07:48:06+11:00",
+                "modified_date": "2017-01-30T07:48:06+11:00",
+                "failure_reason": null,
+                "clip_id": "813409ac-5d29-4a12-9017-72c60f9351a6",
+                "start": "2017-01-30T22:45:00+11:00",
+                "end": "2017-01-30T23:45:00+11:00",
+                "closed_captioned": false,
+                "is_blocking": false
+            }
+        ],
+        "creation_date": "2017-01-30T07:48:06+11:00",
+        "modified_date": "2017-01-30T07:48:06+11:00",
+        "booking_id": "452984",
+        "start_now": false,
+        "start": "2017-01-30T22:45:00+11:00",
+        "end": "2017-01-30T23:45:00+11:00",
+        "send_to_ardome": false,
+        "send_to_avid": true,
+        "send_to_evs": true,
+        "ingest": null,
+        "foxsports_booking_id": "451364",
+        "full_path_switching": false,
+        "quantel_booking": false,
+        "closed_captioned": false,
+        "is_future": true,
+        "livestream_booking": false,
+        "evs_booking": true,
+        "is_running": false
+    },
+    {
+        "id": 330808,
+        "type": null,
+        "name": "GEN_SPORTS_NIGHT_2017_OA",
+        "path": {
+            "id": 235334,
+            "routes": [
+                {
+                    "id": 337045,
+                    "source": {
+                        "id": 655597,
+                        "port": "317",
+                        "name": "Sky News",
+                        "displayName": "Sky News",
+                        "sessionId": "2730999",
+                        "previousSessionId": "2730999",
+                        "type": "Channel",
+                        "start": "2017-01-30T21:55:00+11:00",
+                        "end": "2017-01-30T23:05:47+11:00",
+                        "creation_date": "2017-01-30T08:01:43+11:00",
+                        "modified_date": "2017-01-30T08:01:43+11:00"
+                    },
+                    "destination": {
+                        "id": 655596,
+                        "port": "310",
+                        "name": "EVSXS02REC4",
+                        "displayName": "XS02REC4",
+                        "sessionId": "2731000",
+                        "previousSessionId": "2730999",
+                        "type": "Recording Device",
+                        "start": "2017-01-30T21:55:00+11:00",
+                        "end": "2017-01-30T23:05:47+11:00",
+                        "creation_date": "2017-01-30T08:01:43+11:00",
+                        "modified_date": "2017-01-30T08:01:43+11:00"
+                    },
+                    "switchable": true,
+                    "creation_date": "2017-01-30T08:01:43+11:00",
+                    "modified_date": "2017-01-30T08:01:43+11:00"
+                }
+            ],
+            "creation_date": "2017-01-30T08:01:43+11:00",
+            "modified_date": "2017-01-30T08:01:43+11:00"
+        },
+        "bookingMetadata": {
+            "id": 79695,
+            "sport": "GEN",
+            "sportID": "",
+            "competition": "Sports Night",
+            "teamA": "",
+            "teamB": "",
+            "round": "",
+            "year": "2017",
+            "suffix": "OA",
+            "project": "",
+            "matchID": "",
+            "fixtureID": "",
+            "splits": [
+                ""
+            ],
+            "returns": [
+                ""
+            ],
+            "signals": [
+                ""
+            ],
+            "foxSportsNews": false,
+            "voiceOver": false,
+            "manualName": "",
+            "creation_date": "2017-01-30T08:01:43+11:00",
+            "modified_date": "2017-01-30T08:01:43+11:00"
+        },
+        "status": "CORRUPTED",
+        "jobs": [
+            {
+                "description": "Router Switch",
+                "id": 1184693,
+                "status": "SCHEDULED",
+                "routes": "310<317",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T08:01:43+11:00",
+                "modified_date": "2017-01-30T08:01:43+11:00",
+                "failure_reason": null,
+                "switch_time": "2017-01-20T21:55:00+11:00",
+                "route_resources": "EVSXS02REC4<Sky News",
+                "is_manual_switch": false,
+                "is_blocking": true
+            },
+            {
+                "description": "Clip",
+                "id": 1184694,
+                "status": "SCHEDULED",
+                "destination": null,
+                "recorder": "EVSXS02REC4",
+                "name": "GEN_SPORTS_NIGHT_2017_OA",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T08:01:43+11:00",
+                "modified_date": "2017-01-30T08:01:43+11:00",
+                "failure_reason": null,
+                "clip_id": "8b61e6f3-17fb-45a1-b3a9-7357c4ba555e",
+                "start": "2017-01-30T21:55:00+11:00",
+                "end": "2017-01-30T23:05:47+11:00",
+                "closed_captioned": false,
+                "is_blocking": false
+            }
+        ],
+        "creation_date": "2017-01-30T08:01:43+11:00",
+        "modified_date": "2017-01-30T08:01:43+11:00",
+        "booking_id": "452908",
+        "start_now": false,
+        "start": "2017-01-30T21:55:00+11:00",
+        "end": "2017-01-30T23:05:47+11:00",
+        "send_to_ardome": false,
+        "send_to_avid": true,
+        "send_to_evs": true,
+        "ingest": null,
+        "foxsports_booking_id": "451288",
+        "full_path_switching": false,
+        "quantel_booking": false,
+        "closed_captioned": false,
+        "is_future": true,
+        "livestream_booking": false,
+        "evs_booking": true,
+        "is_running": false
+    },
+    {
+        "id": 330786,
+        "type": null,
+        "name": "FSN_SCORE_CENTRE_2200_2017_STU_PGM",
+        "path": {
+            "id": 235312,
+            "routes": [
+                {
+                    "id": 337023,
+                    "source": {
+                        "id": 655553,
+                        "port": "123",
+                        "name": "Studio News ISO 1",
+                        "displayName": "Studio News ISO 1",
+                        "sessionId": "2731167",
+                        "previousSessionId": "2731167",
+                        "type": "Studio",
+                        "start": "2017-01-30T21:45:00+11:00",
+                        "end": "2017-01-30T22:45:00+11:00",
+                        "creation_date": "2017-01-30T07:47:56+11:00",
+                        "modified_date": "2017-01-30T07:47:56+11:00"
+                    },
+                    "destination": {
+                        "id": 655552,
+                        "port": "117",
+                        "name": "EVSXS01REC1",
+                        "displayName": "XS01REC1",
+                        "sessionId": "2731168",
+                        "previousSessionId": "2731167",
+                        "type": "Recording Device",
+                        "start": "2017-01-30T21:45:00+11:00",
+                        "end": "2017-01-30T22:45:00+11:00",
+                        "creation_date": "2017-01-30T07:47:56+11:00",
+                        "modified_date": "2017-01-30T07:47:56+11:00"
+                    },
+                    "switchable": true,
+                    "creation_date": "2017-01-30T07:47:56+11:00",
+                    "modified_date": "2017-01-30T07:47:56+11:00"
+                }
+            ],
+            "creation_date": "2017-01-30T07:47:56+11:00",
+            "modified_date": "2017-01-30T07:47:56+11:00"
+        },
+        "bookingMetadata": {
+            "id": 79673,
+            "sport": "FSN",
+            "sportID": "",
+            "competition": "Score Centre",
+            "teamA": "",
+            "teamB": "",
+            "round": "",
+            "year": "2017",
+            "suffix": "STU PGM",
+            "project": "",
+            "matchID": "",
+            "fixtureID": "",
+            "splits": [
+                ""
+            ],
+            "returns": [
+                ""
+            ],
+            "signals": [
+                ""
+            ],
+            "foxSportsNews": false,
+            "voiceOver": false,
+            "manualName": "2200",
+            "creation_date": "2017-01-30T07:47:56+11:00",
+            "modified_date": "2017-01-30T07:47:57+11:00"
+        },
+        "status": "SCHEDULED",
+        "jobs": [
+            {
+                "description": "Router Switch",
+                "id": 1184648,
+                "status": "SCHEDULED",
+                "routes": "117<123",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T07:47:56+11:00",
+                "modified_date": "2017-01-30T07:47:56+11:00",
+                "failure_reason": null,
+                "switch_time": "2017-01-20T21:45:00+11:00",
+                "route_resources": "EVSXS01REC1<Studio News ISO 1",
+                "is_manual_switch": false,
+                "is_blocking": true
+            },
+            {
+                "description": "Clip",
+                "id": 1184649,
+                "status": "SCHEDULED",
+                "destination": null,
+                "recorder": "EVSXS01REC1",
+                "name": "FSN_SCORE_CENTRE_2200_2017_STU_PGM",
+                "priority": "CRITICAL",
+                "creation_date": "2017-01-30T07:47:56+11:00",
+                "modified_date": "2017-01-30T07:47:56+11:00",
+                "failure_reason": null,
+                "clip_id": "02023e72-833f-429f-8360-027485a76867",
+                "start": "2017-01-30T21:45:00+11:00",
+                "end": "2017-01-30T22:45:00+11:00",
+                "closed_captioned": false,
+                "is_blocking": false
+            }
+        ],
+        "creation_date": "2017-01-30T07:47:56+11:00",
+        "modified_date": "2017-01-30T07:47:56+11:00",
+        "booking_id": "452992",
+        "start_now": false,
+        "start": "2017-01-30T21:45:00+11:00",
+        "end": "2017-01-30T22:45:00+11:00",
+        "send_to_ardome": false,
+        "send_to_avid": true,
+        "send_to_evs": true,
+        "ingest": null,
+        "foxsports_booking_id": "451372",
+        "full_path_switching": false,
+        "quantel_booking": false,
+        "closed_captioned": false,
+        "is_future": true,
+        "livestream_booking": false,
+        "evs_booking": true,
+        "is_running": false
+    }
+]

@@ -1,0 +1,16 @@
+.rcg-interactive {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: $rcg-int-color--body;
+    width: 100%;
+    height: 100vh;
+    color: $rcg-int-color--white;
+    font-family: 'Roboto', sans-serif;
+    font-size: $rcg-int-font-size--body-content-6;
+}
+
+.rcg-interactive__body {
+    @include flex-container;
+    height: calc(100vh - 90px);
+    overflow: hidden;
+}

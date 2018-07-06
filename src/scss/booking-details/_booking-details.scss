@@ -1,0 +1,213 @@
+.rcg-booking-details {
+    @include flex-column-scroll;
+    @include rcg-scrollbar;
+    flex: 6 1 10%;
+    background: $rcg-int-color--booking-detail;
+}
+
+.rcg-booking-details-container {
+    margin: $rcg-int-margin--sm;
+    height: calc(100vh - 160px);
+}
+
+// INDICATOR
+.rcg-booking-details__indicator {
+    display: none;
+    background: $rcg-int-color--result;
+    padding: $rcg-int-padding-m $rcg-int-padding-l;
+    width: 100%;
+    color: $rcg-int-color--white;
+    font-size: $rcg-int-font-size--body-content-3;
+    font-weight: normal;
+    font-style: italic;
+
+    &--show {
+        display: block;
+    }
+}
+
+.rcg-booking-details__status-block {
+    display: flex;
+    flex-flow: column;
+    margin: $rcg-int-margin--xs 0 $rcg-int-margin--m;
+    width: 100%;
+
+    @media screen and (min-width: $screen-tablet) {
+        flex-flow: row wrap;
+        width: 95%;
+    }
+
+    @media screen and (min-width: $screen-xl-desktop) {
+        width: 90%;
+    }
+}
+
+.rcg-booking-details__status-block-number {
+    order: 0;
+    margin-top: $rcg-int-margin--xs;
+    width: 100%;
+    font-size: $rcg-int-font-size--body-content-2;
+
+    & span {
+        margin-right: $rcg-int-margin--xs;
+        color: $rcg-int-color--blue;
+        font-weight: bold;
+    }
+
+    @media screen and (min-width: $screen-tablet) {
+        margin-top: $rcg-int-margin--sm;
+        width: 50%;
+    }
+}
+
+.rcg-booking-details__status-block-info {
+    order: -1;
+    width: 100%;
+    text-align: right;
+
+    @media screen and (min-width: $screen-tablet) {
+        order: 1;
+        width: 50%;
+    }
+}
+
+.rcg-booking-details__info-block {
+    margin-bottom: $rcg-int-margin--xs;
+    width: 100%;
+
+    @media screen and (min-width: $screen-lg-desktop) {
+        width: 95%;
+    }
+}
+
+.rcg-booking-details__info {
+    @include data-block;
+
+    dt {
+        @include data-column;
+        display: inline-block;
+        color: $rcg-int-color--blue;
+        font-weight: bold;
+    }
+
+    dd {
+        @include data-column;
+        display: inline-block;
+        word-break: break-all;
+    }
+
+    &--left-column,
+    &--right-column {
+
+        dt {
+            width: 30%;
+        }
+
+        dd {
+            width: 70%;
+        }
+    }
+
+    &--left-column {
+
+        @media screen and (min-width: $screen-desktop) {
+            width: 45%;
+
+            dt {
+                width: 40%;
+            }
+
+            dd {
+                width: 60%;
+            }
+        }
+    }
+
+    &--right-column {
+
+        @media screen and (min-width: $screen-desktop) {
+            width: 55%;
+
+            dt {
+                width: 25%;
+            }
+
+            dd {
+                width: 75%;
+            }
+        }
+    }
+}
+
+.rcg-booking-details__info-title {
+    display: block;
+    margin-bottom: $rcg-int-margin--sm;
+    width: 100%;
+    word-break: break-all;
+}
+
+.rcg-booking-details__all-caps {
+    text-transform: uppercase;
+}
+
+.rcg-booking-details__filter-button {
+    margin-bottom: $rcg-int-margin--m;
+    width: 100%;
+    text-align: center;
+
+    @media screen and (min-width: $screen-lg-desktop) {
+        width: 95%;
+    }
+}
+
+.rcg-booking-details__filter-switch-button {
+    @include form-button
+}
+
+// BOOKING DETAILS STATUS
+.rcg-booking-details__status {
+    display: inline;
+    border-radius: $rcg-int-border-radius-all;
+    padding: 2px $rcg-int-padding-m;
+    font-size: $rcg-int-font-size--body-content-5;
+    font-weight: bold;
+
+    &--scheduled {
+        background-color: $rcg-int-status-color--blue;
+        color: $rcg-int-status-color--black;
+    }
+
+    &--processed {
+        background-color: $rcg-int-status-color--green;
+        color: $rcg-int-status-color--black;
+    }
+
+    &--cancelled {
+        background-color: $rcg-int-status-color--red;
+        color: $rcg-int-color--white;
+    }
+
+    &--corrupted {
+        background-color: $rcg-int-status-color--yellow;
+        color: $rcg-int-status-color--black;
+    }
+
+    &--running {
+        background-color: $rcg-int-status-color--pink;
+        color: $rcg-int-color--white;
+    }
+}
+
+.rcg-booking-details__switch-button {
+    @include form-button;
+    margin: $rcg-int-margin--xs;
+    padding: $rcg-int-padding-sm;
+
+    &--disabled {
+        cursor: progress;
+    }
+}
+
+.rcg-booking-details__switch-button-icon {
+    margin-right: $rcg-int-margin--xs;
+}

@@ -1,0 +1,181 @@
+// AUTO
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin sidebar-panel {
+    margin-bottom: 2vw;
+    border-radius: 1vw;
+    background-color: $rcg-auto-sidebar-panel-body;
+}
+
+@mixin sidebar-panel-header {
+    background-color: $rcg-auto-sidebar-panel-header;
+    padding: .5vw 1vw;
+    text-transform: uppercase;
+    font-size: $rcg-auto-font-size--body-content-6;
+    font-weight: bold;
+}
+
+// INTERACTIVE
+@mixin flex-container {
+    display: flex;
+    flex: auto;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+@mixin flex-column-scroll {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+@mixin input-label {
+    margin-bottom: $rcg-int-margin--xs/3;
+    font-size: $rcg-int-font-size--body-content-6;
+    font-weight: bold;
+}
+
+// CUSTOM SCROLLBAR
+@mixin rcg-scrollbar {
+    scrollbar-face-color: $rcg-int-color--blue;
+    scrollbar-3dlight-color: $rcg-int-color--side-bar;
+    scrollbar-highlight-color: $rcg-int-color--side-bar;
+    scrollbar-track-color: $rcg-int-color--side-bar;
+    scrollbar-arrow-color: $rcg-int-color--blue;
+    scrollbar-shadow-color: $rcg-int-color--side-bar;
+    scrollbar-dark-shadow-color: $rcg-int-color--side-bar;
+
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar-corner {
+	    background: $rcg-int-color--side-bar;
+    }
+
+    &::-webkit-scrollbar {
+    	background: $rcg-int-color--side-bar;
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+    	border-radius: $rcg-int-border-radius-all;
+    	background-color: $rcg-int-color--blue;
+    }
+}
+
+// FORMS
+@mixin input-placeholder-text {
+    color: $rcg-int-color--light-grey;
+    font-style: italic;
+}
+
+@mixin input-field {
+    border: 0;
+    border-radius: $rcg-int-border-radius-all;
+    background: $rcg-int-color--input;
+    padding: $rcg-int-padding-sm $rcg-int-padding-m;
+    width: 100%;
+    color: $rcg-int-color--white;
+
+    &:focus {
+        border: $rcg-int-color--blue;
+        box-shadow: $rcg-int-color--blue;
+        background: $rcg-int-color--light-grey;
+    }
+
+    &::-webkit-input-placeholder {
+        @include input-placeholder-text;
+    }
+
+    &::-moz-placeholder {
+        @include input-placeholder-text;
+    }
+
+    &::-ms-input-placeholder {
+        @include input-placeholder-text;
+    }
+
+    &:-moz-placeholder {
+        @include input-placeholder-text;
+    }
+}
+
+@mixin drop-down {
+    background-image: none;
+    appearance: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+@mixin drop-down-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 2;
+    height: 100%;
+    text-align: center;
+    color: $rcg-int-color--white;
+    font-family: FontAwesome;
+    content: "\f0d7";
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+@mixin form-button {
+    transition: background 0.2s ease-in-out;
+    border: 1px solid $rcg-int-color--form-color;
+    border-radius: $rcg-int-border-radius-all;
+    background: rgba($rcg-int-color--form-color, 0);
+    padding: $rcg-int-padding-sm/2 $rcg-int-padding-l;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    color: $rcg-int-color--form-color;
+    font-size: $rcg-int-font-size--body-content-4;
+
+    &:hover {
+        background: $rcg-int-color--form-color;
+        color: $rcg-int-color--white;
+    }
+
+    &:active {
+        border: 1px solid $rcg-int-color--form-color-alt;
+        background: rgba($rcg-int-color--form-color-alt, 1);
+    }
+}
+
+// DATE DETAILS & CLOCK
+@mixin date-clock-container {
+    border-radius: $rcg-int-border-radius-all;
+    background: $rcg-int-color--dark-blue;
+    font-style: italic;
+}
+
+// BOOKING DETAILS & JOBS
+@mixin data-column {
+    margin-bottom: $rcg-int-margin--xs;
+    padding-right: $rcg-int-padding-m;
+    vertical-align: text-top;
+    font-size: $rcg-int-font-size--body-content-5;
+}
+
+@mixin data-block {
+    display: block;
+    margin-bottom: 0;
+    padding-right: $rcg-int-padding-m;
+    width: 100%;
+    -webkit-margin-before: 0; // OVERRIDE USER AGENT DL STYLE
+    -webkit-margin-after: 0;
+
+    @media screen and (min-width: $screen-desktop) {
+        display: inline-block;
+        width: 50%;
+        vertical-align: text-top;
+    }
+}
